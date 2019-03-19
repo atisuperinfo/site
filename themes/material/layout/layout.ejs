@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="<%=config.language%>">
+
+    <%- partial('_partial/head') %>
+
+    <% if(page.layout === 'gallery') { %>
+        <!-- Single Gallery Page -->
+        <%- partial('_widget/page-gallery') %>
+    <% } else { %>
+        <body id="scheme-<%= theme.scheme %>" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                <% if(theme.scheme === 'Isolation') { %>
+                    <!-- Isolation Header -->
+                    <%- partial('_partial/isolate_info') %>
+                <% } %>
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    <% if(theme.scheme === 'Paradox') { %>
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    <ul style="list-style-type: none; position: fixed; cursor: pointer; z-index: 8; float: right; right: 0; top: 35%; width: 5em; margin-top: -2.5em;" class="ul-icons animated fadeInRight delay-1s">
+                      <li>
+                        <a href="#L384">
+                          
+                        </a>
+                      </li>  
+                      <li>
+                        <a class="services" href="/#settings-dropdown" target="_blank"><i class="material-icons" id="services" style="font-size: 30px; color: #fff;">
+                        contact_phone
+                        </i>&nbsp;&nbsp;Contatos</a>
+                      </li>  
+                      <li>
+                        <a class="services" href="https://twitter.com/mildrenben" target="_blank"><i class="material-icons" id="services" style="font-size: 30px; color: #fff;">
+                        message
+                        </i>&nbsp;&nbsp;Email</a>
+                      </li>
+                      <li>
+                          <a class="services show-modal"><i class="material-icons" id="services" style="font-size: 30px; color: #fff;">
+                            build
+                          </i>&nbsp;&nbsp;Serviços</a>
+                      </li>  
+                    </ul>
+
+  <dialog class="mdl-dialog animated fadeIn">
+        <button type="button" class="mdl-button close" style="color: #fff; padding: 5px; float: right; background-color: #f44336;">
+          <span style="font-size: 26px">
+          <i class="fas fa-times"></i>
+          </span>
+        </button>
+    <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+      <button onclick="window.location.href='https://atisuperinfo.com.br/en/2018/07/25/criacao-digital/'" type="button" class="mdl-button close">
+        <span style="font-size: 36px; float: left;"><i class="fab fa-android"></i></span>APLICATIVO MOBILE ANDROID
+      </button>
+      
+      <button onclick="window.location.href='https://atisuperinfo.com.br/en/2018/07/25/criacao-digital/'" type="button" class="mdl-button close">
+        <span style="font-size: 36px; float: left;"><i class="fas fa-code"></i></span>SITE
+      </button>
+      <button onclick="window.location.href='https://atisuperinfo.com.br/en/2018/07/25/criacao-digital/'" type="button" class="mdl-button close">
+        <span style="font-size: 36px; float: left;"><i class="fas fa-brain"></i></span>&nbsp;&nbsp;SISTEMA WEB
+      </button>
+      
+      <button onclick="window.location.href='https://atisuperinfo.com.br/undefined/2019/01/08/identidade-visual/'" type="button" class="mdl-button close">
+        <span style="font-size: 36px; float: left;"><i class="fas fa-dice-d20"></i></span>DESIGN
+      </button>
+
+      <button onclick="window.location.href='https://atisuperinfo.com.br/en/2019/01/25/suporte/'" type="button" class="mdl-button close">
+        <span style="font-size: 36px; float: left;"><i class="fas fa-wifi"></i></span>REDES DE INTERNET
+      </button>
+
+        <button onclick="window.location.href='http://atisuperinfo.com.br/en/2019/01/25/suporte/'" type="button" class="mdl-button close">
+          <span style="font-size: 36px; float: left;"><i class="fas fa-memory"></i></span> HARDWARE 
+        </button>
+      
+        <button onclick="window.location.href='http://atisuperinfo.com.br/en/2019/01/25/suporte/'" type="button" class="mdl-button close">
+          <span style="font-size: 36px; float: left;"><i class="fas fa-cogs"></i></span>SUPORTE TÉCNICO
+        </button>
+    </div>
+  </dialog>
+
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script>
+    var dialog = document.querySelector('dialog');
+    var showModalButton = document.querySelector('.show-modal');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    showModalButton.addEventListener('click', function() {
+      dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+      dialog.close();
+    });
+
+  </script>
+
+
+
+                 <style>
+                 .mdl-button{
+                  background-color: #ECEFF1;
+                  margin: 10px;
+                  padding-left: 2%; 
+                 }
+                 .mdl-button:hover{
+                  background-color: #40C4FF;
+                  color: #fff;
+                  font-weight: bold;
+                 }
+                 .mdl-button:visited{
+                  background-color: pink;
+                  color: #fff;
+                  font-weight: bold;
+                 }
+                 .mdl-dialog{
+                  width:  70%;
+                  height: 70%;
+                 }
+                  dialog {
+                    padding: 4%;
+                    position: fixed;
+                  }
+                    .ul-icons {
+                      display: inline-block;
+                      white-space: nowrap;
+                      padding: 13px;
+                      box-sizing: border-box;
+                      font-family: Roboto, sans-serif;
+                      text-decoration: none;
+                    }
+                    .ul-icons:hover {
+                      width: 144px;
+                      -webkit-transform: translateX(-50px);
+                      transform: translateX(-50px);
+                    }
+                    .ul-icons li {
+                      padding-bottom: 8px;
+                    }
+                    .services {
+                      font-size: 14px;
+                      font-weight: bold;
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50px;
+                      background: #296FA0;
+                      display: inline-block;
+                      white-space: nowrap;
+                      padding: 13px;
+                      box-sizing: border-box;
+                      color: #efefef;
+                      transition: all 0.2s ease;
+                      font-family: Roboto, sans-serif;
+                      text-decoration: none;
+                      box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+                    }
+                    .services i {
+                      margin-right: 10px;
+                      transition: margin-right 0.2s ease;
+                      color: white;
+                    }
+                    .services:hover {
+                      width: 150px;
+                      -webkit-transform: translateX(-60px);
+                      transform: translateX(-60px);
+                    }
+                    .services:hover i {
+                      margin-right: 10px;
+                    }
+                    .contacts {
+                      font-size: 14px;
+                      font-weight: bold;
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50px;
+                      background: #296FA0;
+                      display: inline-block;
+                      white-space: nowrap;
+                      padding: 13px;
+                      box-sizing: border-box;
+                      color: #efefef;
+                      transition: all 0.2s ease;
+                      font-family: Roboto, sans-serif;
+                      text-decoration: none;
+                      box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+                    }
+                    .contacts i {
+                      margin-right: 10px;
+                      transition: margin-right 0.2s ease;
+                      color: white;
+                    }
+                    .contacts:hover {
+                      width: 150px;
+                      -webkit-transform: translateX(-60px);
+                      transform: translateX(-60px);
+                    }
+                    .contacts:hover i {
+                      margin-right: 10px;
+                    }
+                    .messages {
+                      font-size: 14px;
+                      font-weight: bold;
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50px;
+                      background: #296FA0;
+                      display: inline-block;
+                      white-space: nowrap;
+                      padding: 13px;
+                      box-sizing: border-box;
+                      color: #efefef;
+                      transition: all 0.2s ease;
+                      font-family: Roboto, sans-serif;
+                      text-decoration: none;
+                      box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+                    }
+                    .messages i {
+                      margin-right: 10px;
+                      transition: margin-right 0.2s ease;
+                      color: white;
+                    }
+                    .messages:hover {
+                      width: 150px;
+                      -webkit-transform: translateX(-60px);
+                      transform: translateX(-60px);
+                    }
+                    .messages:hover i {
+                      margin-right: 10px;
+                    }
+
+                     #services{
+                        transition: all 0.3s ease;
+                        margin-right: 5px;
+
+
+                     }
+                     #services:hover {
+                        text-shadow: 1px 1px 0 #e0f7fa, 2px 2px 0 #e0f7fa, 3px 3px 0 #0cbdec;
+                        transform: translate(-6px, -6px);
+                        margin-right: 10px;
+                    }
+                    #contacts{
+                        transition: all 0.3s ease;
+                     }
+                     #contacts:hover {
+                        text-shadow: 1px 1px 0 #e0f7fa, 2px 2px 0 #e0f7fa, 3px 3px 0 #0cbdec;
+                        transform: translate(-6px, -6px);
+                    }
+                    #messages{
+                        transition: all 0.3s ease;
+                     }
+                     #messages:hover {
+                        text-shadow: 1px 1px 0 #e0f7fa, 2px 2px 0 #e0f7fa, 3px 3px 0 #0cbdec;
+                        transform: translate(-6px, -6px);
+                    }
+                 </style>
+                    <% } %>
+
+                    <%- body %>
+
+                    <% if(theme.scheme === 'Paradox') { %>
+                        <%- partial('_partial/sidebar') %>
+                    <% } %>
+
+                    <% if( (theme.scheme === 'Paradox') && (is_post() || is_home() || is_archive() || is_category() || (page.totop === true) ) ) { %>
+                        <!-- Footer Top Button -->
+                        <%- partial('_partial/footer_top')  %>
+                    <% } %>
+
+                    <%- partial('_partial/footer') %>
+
+                    <%- partial('_partial/import_js') %>
+                </main>
+            </div>
+
+        </body>
+    <% } %>
+</html>
