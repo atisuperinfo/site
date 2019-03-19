@@ -15,7 +15,7 @@ language:
 timezone:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: ati-super-info.github.io/
+url: ati-super-info.github.io/site
 root: /
 permalink: :lang/:year/:month/:day/:title/
 permalink_defaults:
@@ -23,7 +23,7 @@ permalink_defaults:
 # Directory
 source_dir: source
 public_dir: docs
-tag_dir: tags
+tag_dir: tagsahsouza
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
