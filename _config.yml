@@ -15,8 +15,8 @@ language:
 timezone:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: atisuperinfo.com.br/
-root: /
+url: atisuperinfo.com.br/site
+root: /site/
 permalink: :lang/:year/:month/:day/:title/
 permalink_defaults:
 

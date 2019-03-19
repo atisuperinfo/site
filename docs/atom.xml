@@ -3,11 +3,11 @@
   <title>ATI Super-Info</title>
   
   <subtitle>Negócio Inteligente</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/site/atom.xml" rel="self"/>
   
-  <link href="atisuperinfo.com.br/"/>
+  <link href="atisuperinfo.com.br/site/"/>
   <updated>2019-01-10T02:56:28.000Z</updated>
-  <id>atisuperinfo.com.br/</id>
+  <id>atisuperinfo.com.br/site/</id>
   
   <author>
     <name>Serviços Tecnológicos</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Suporte TI</title>
-    <link href="atisuperinfo.com.br/en/2019/01/25/suporte/"/>
-    <id>atisuperinfo.com.br/en/2019/01/25/suporte/</id>
+    <link href="atisuperinfo.com.br/site/en/2019/01/25/suporte/"/>
+    <id>atisuperinfo.com.br/site/en/2019/01/25/suporte/</id>
     <published>2019-01-25T18:00:37.000Z</published>
     <updated>2019-01-10T02:56:28.000Z</updated>
     
@@ -36,8 +36,8 @@
   
   <entry>
     <title>Identidade Visual Digital</title>
-    <link href="atisuperinfo.com.br/undefined/2019/01/08/identidade-visual/"/>
-    <id>atisuperinfo.com.br/undefined/2019/01/08/identidade-visual/</id>
+    <link href="atisuperinfo.com.br/site/undefined/2019/01/08/identidade-visual/"/>
+    <id>atisuperinfo.com.br/site/undefined/2019/01/08/identidade-visual/</id>
     <published>2019-01-08T22:53:31.000Z</published>
     <updated>2019-01-10T02:56:06.000Z</updated>
     
@@ -57,8 +57,8 @@
   
   <entry>
     <title>Marketing Digital</title>
-    <link href="atisuperinfo.com.br/undefined/2019/01/08/marketing/"/>
-    <id>atisuperinfo.com.br/undefined/2019/01/08/marketing/</id>
+    <link href="atisuperinfo.com.br/site/undefined/2019/01/08/marketing/"/>
+    <id>atisuperinfo.com.br/site/undefined/2019/01/08/marketing/</id>
     <published>2019-01-08T22:13:30.000Z</published>
     <updated>2019-01-10T02:56:26.000Z</updated>
     
@@ -78,8 +78,8 @@
   
   <entry>
     <title>Criações Digitais</title>
-    <link href="atisuperinfo.com.br/en/2018/07/25/criacao-digital/"/>
-    <id>atisuperinfo.com.br/en/2018/07/25/criacao-digital/</id>
+    <link href="atisuperinfo.com.br/site/en/2018/07/25/criacao-digital/"/>
+    <id>atisuperinfo.com.br/site/en/2018/07/25/criacao-digital/</id>
     <published>2018-07-25T19:00:37.000Z</published>
     <updated>2019-01-10T02:56:23.000Z</updated>
     
