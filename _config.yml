@@ -15,8 +15,8 @@ language:
 timezone:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: ati-super-info.github.io/site
-root: /site/
+url: ati-super-info.github.io/
+root: /
 permalink: :lang/:year/:month/:day/:title/
 permalink_defaults:
 
@@ -98,7 +98,7 @@ theme: material
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/atisuperinfo/site.git
+  repo: https://github.com/ati-super-info/site.git
   branch: master #published
   message:   #leave this blank
 # Include redirects file
